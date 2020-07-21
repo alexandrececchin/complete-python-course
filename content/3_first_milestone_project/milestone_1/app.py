@@ -1,5 +1,3 @@
-# Incomplete app!
-
 MENU_PROMPT = "\nEnter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie by title, or 'q' to quit: "
 movies = []
 
@@ -44,4 +42,4 @@ def menu():
         selection = input(MENU_PROMPT)
 
 
-menu();
+menu()
