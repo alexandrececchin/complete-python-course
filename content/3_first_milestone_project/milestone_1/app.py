@@ -19,12 +19,14 @@ def print_movie(movie):
 
 
 def list_movies():
-    print(movies)
+    for movie in movies:
+        print_movie(movie)
 
 
 def find_by_title():
     title = input("Enter the movie title to search: ")
-    print(list(filter(lambda x: x['title'] == title, movies)))
+    for movie in filter(lambda x: x['title'] == title, movies):
+        print_movie(movie)
 
 
 def menu():
