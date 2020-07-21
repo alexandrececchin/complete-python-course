@@ -12,6 +12,12 @@ def add():
     movies.append({'title': title, 'director': director, 'year': year})
 
 
+def print_movie(movie):
+    print(f"Title: {movie['title']} ")
+    print(f"Director: {movie['director']} ")
+    print(f"Year: {movie['year']} ")
+
+
 def list_movies():
     print(movies)
 
