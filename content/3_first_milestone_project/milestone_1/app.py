@@ -21,17 +21,19 @@ def find_by_title():
     print(list(filter(lambda x: x['title'] == title, movies)))
 
 
-selection = input(MENU_PROMPT)
-while selection != 'q':
-    if selection == "a":
-        add();
-    elif selection == "l":
-        list_movies()
-    elif selection == "f":
-        find_by_title()
-    else:
-        print('Unknown command. Please try again.')
-
+def menu():
     selection = input(MENU_PROMPT)
+    while selection != 'q':
+        if selection == "a":
+            add();
+        elif selection == "l":
+            list_movies()
+        elif selection == "f":
+            find_by_title()
+        else:
+            print('Unknown command. Please try again.')
 
-# Remember to run the user menu function at the end!
+        selection = input(MENU_PROMPT)
+
+
+menu();
