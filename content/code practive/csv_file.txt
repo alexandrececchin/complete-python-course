@@ -1,0 +1,3 @@
+juventus,Roma,Italy
+Chelsea,London,UK
+Inter,POA,BR
